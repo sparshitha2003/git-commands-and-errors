@@ -1,0 +1,5 @@
+git init -> initializes a new git repository in directory
+git status -> shows what is inside the staging area
+              the red underlined shows that it is inside the working directory but it is not yet given to the stage area
+git add ->               
+
