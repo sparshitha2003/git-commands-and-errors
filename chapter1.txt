@@ -1,5 +1,23 @@
 git init -> initializes a new git repository in directory
 git status -> shows what is inside the staging area
               the red underlined shows that it is inside the working directory but it is not yet given to the stage area
-git add ->               
+git add filename-> to add the file to the staging area            
+git commit  -m "message" -> to commit the file
+git log -> shows what commits you have made
+git add . -> this adds  all the files in the current working directory to the staging area
+git diff filename-> to check the differance between the commmited file and the new file which was modified 
+git checkout filename-> now i have modified the file,  but i want the old file which i have commited, to revert back 
+                       to the old file
+git remote add origin (paste the url of the remote repository) ->now the remote has been created
+git branch -M main
+git push -u origin main  -> to push the localy created repository somewhere 
+                           on the internet to the remote repository  ...
+                           it links up the remote and local repository  
+                           we are pushing it to the branch called main(default branch)   
+git rm --cached -r . -> to remove all the files in the staging area        
+git clone url -> to clone the the remote repo to the local repo 
+git branch name -> to indicate which branch you want to pushb the code      
+git branch -> to check what braches you have , * shows which branch you are currently on
+git checkout (branch name) -> this goes to the branch you want to work on                  
+
 
