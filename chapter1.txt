@@ -18,6 +18,8 @@ git rm --cached -r . -> to remove all the files in the staging area
 git clone url -> to clone the the remote repo to the local repo 
 git branch name -> to indicate which branch you want to pushb the code      
 git branch -> to check what braches you have , * shows which branch you are currently on
-git checkout (branch name) -> this goes to the branch you want to work on                  
+git checkout (branch name) -> this goes to the branch you want to work on  
+git merge(name of the branch you want to merge)  
+git push  origin main  -u ->pushes into the main branch            
 
 
