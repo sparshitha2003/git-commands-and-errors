@@ -11,3 +11,17 @@ Commit the changes:
 git add .gitattributes
 git commit -m "Track large file using Git LFS"
 git push
+
+
+
+
+output
+
+version https://git-lfs.github.com/spec/v1
+oid sha256:cf58c7c9e89261cfd26d3ba86ac1c567e66438b9f4851f1a6a24db8f4c71bec3
+size 83272545
+
+How It Works:
+The pointer file is stored in your Git repository.
+The actual large file is stored in a separate LFS server or storage backend (e.g., GitHub LFS storage).
+When someone clones the repository and has Git LFS installed, the placeholder file is replaced with the actual large file during the checkout process.
