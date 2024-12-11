@@ -1,0 +1,13 @@
+Using Git LFS:
+
+Install Git LFS:
+
+git lfs install
+
+
+git lfs track "calories_model"
+Commit the changes:
+
+git add .gitattributes
+git commit -m "Track large file using Git LFS"
+git push
