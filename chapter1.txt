@@ -1,10 +1,11 @@
 git init -> initializes a new git repository in directory
 git status -> shows what is inside the staging area
               the red underlined shows that it is inside the working directory but it is not yet given to the stage area
-git add filename-> to add the file to the staging area            
+git add filename-> to add the file to the staging area  
+git add . -> this adds  all the files in the current working directory to the staging area
 git commit  -m "message" -> to commit the file
 git log -> shows what commits you have made
-git add . -> this adds  all the files in the current working directory to the staging area
+
 git diff filename-> to check the differance between the commmited file and the new file which was modified 
 git checkout filename-> now i have modified the file,  but i want the old file which i have commited, to revert back 
                        to the old file
