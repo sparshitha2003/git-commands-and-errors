@@ -1,0 +1,38 @@
+ERROR"you've added another git repository inside your current repository."
+If You Added the Repository by Mistake:
+Remove it from the Git index without deleting the folder:
+
+git rm --cached school-management-system-php
+This removes the inner repository from the parent repository’s index.
+
+Add the changes and commit:
+
+
+git add .
+git commit -m "Removed inner repository from index"
+Add the inner repository to .gitignore to prevent it from being tracked in the future:
+
+
+echo "school-management-system-php/" >> .gitignore
+git add .gitignore
+git commit -m "Added inner repository to .gitignore"
+If You Want to Keep It as a Submodule:
+Remove it from the index first:
+
+git rm --cached school-management-system-php
+Add it as a submodule:
+
+
+git submodule add <repository-url> school-management-system-php
+Commit the submodule addition:
+
+
+git add .
+git commit -m "Added school-management-system-php as a submodule"
+Initialize and update the submodule (if needed):
+
+
+git submodule update --init --recursive
+What is a Submodule?
+A Git submodule is a way to include an external Git repository inside your repository while keeping it as an independent entity. This is helpful when you want to maintain separate repositories but link them for easier management.
+
